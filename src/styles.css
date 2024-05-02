@@ -1,1 +1,354 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.menu {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 50px;
+}
+
+
+#education-skills,
+#contact {
+    background-color: #FAEFE6;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+/* start about me section */
+
+#about-me {
+    background-color: #FD883D;
+    color: white;
+    padding: 50px 0;
+}
+
+.about-me-content h2 {
+    font-family: 'Grandstander', cursive;
+    font-weight: 400;
+    font-size: 55px;
+    color: #FAEFE6;
+}
+
+.angelica-text {
+    font-family: 'Grandstander', cursive;
+    font-weight: 900;
+    color: #553566;
+}
+
+.about-me-text {
+    font-size: 18px;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+/* button styles */
+.custom-btn-primary {
+    background-color: #D46BCA;
+    border: none; 
+    color: #FAEFE6;
+}
+
+.custom-btn-primary:hover {
+    background-color: #f3c1ee;
+    color: #553566;
+}
+
+
+
+/* end about me section */
+
+
+
+
+/* start education and skills section */
+
+.bigger-font {
+    font-size: 48px; 
+    font-family: 'Grandstander', cursive;
+    font-weight: 900;
+}
+
+.column-name {
+    font-family: 'Grandstander', cursive;
+    font-weight: 400;
+}
+
+/* put list of languages as columns */
+.two-column-list {
+    display: grid;
+    grid-template-columns: repeat(2, auto); 
+    margin-top: 20px; 
+}
+
+.text-color {
+    color: #553566;
+}
+
+.rectangle {
+    background-color: #553566;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    height: 100%;
+  margin-bottom: 20px;
+}
+
+.rectangle svg {
+    margin-bottom: 15px;
+}
+
+
+.rectangle h4 {
+    color: #FAEFE6;
+    margin-top: 20px; 
+}
+
+.education-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.rectangle p {
+    font-size: 14px;
+    color: #FAEFE6;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.education-info p:first-child {
+    margin-top: 20px; /* Space between the header and the first paragraph */
+}
+
+/* end education and skills section */
+
+
+
+/* start projects section */
+
+.projects {
+    background-color: #553566;
+}
+
+.project-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 500px;
+}
+
+.project-item:not(:last-child) {
+    border-bottom: 1px solid #FAEFE6;
+}
+
+
+
+.project-item img {
+    max-height: 400px;
+    width: auto;
+}
+
+#projects h2 {
+    text-align: center;
+    font-family: 'Grandstander', cursive;
+    font-weight: 900;
+    font-size: 48px;
+    color: #FAEFE6;
+}
+
+.section-title {
+    border-bottom: 2px solid #D46BCA;
+    padding-bottom: 10px; 
+    max-width: 700px;
+}
+
+
+.project-item h3 {
+    font-family: 'Grandstander', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FAEFE6;
+}
+
+.project-item p {
+    font-size: 18px;
+    color: #FAEFE6;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+.tech-used {
+   font-style: italic;
+   font-size: 0.9em; 
+}
+
+.flower-icon {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+/* end projects section */
+
+
+
+
+/* start contact section */
+
+#contact, .remove-margin{
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+/* Custom CSS */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-image-container {
+    background-color: #D46BCA;
+    padding: 50px; 
+
+}
+
+
+.contact-image {
+    max-width:500px;
+    max-height: 500px;
+}
+
+
+.contact-text-container {
+    color: #553566;
+    padding: 20px;
+}
+
+.contact-title {
+    font-family: 'Grandstander', cursive;
+    font-weight: 900;
+    font-size: 55px;
+    color: #D46BCA;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-header {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #553566; 
+}
+
+.contact-email,
+.contact-phone {
+    font-family: 'Grandstander', cursive;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.contact-social {
+    margin-top: 20px;
+}
+
+.social-link {
+    margin-right: 10px;
+}
+
+.social-link img {
+    width: 70px;
+    height: 70px;
+}
+
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.contact-link {
+    color: #553566;
+    text-decoration: none;
+}
+
+.contact-text {
+    
+    font-size: 16px;
+    color: #553566;
+}
+
+
+
+/*end contact section */
+
+/* media query for responsiveness */
+@media (max-width: 768px) {
+    #education-skills,
+    #contact,
+    #about-me {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+        .contact-image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+  
